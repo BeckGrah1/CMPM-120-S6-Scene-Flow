@@ -78,8 +78,8 @@ class gameplayScene extends Phaser.Scene {
         }
         if (this.obstacle.x < 0) {
             this.moveRect = false;
-            // color to victory scene: #f7e7ff
-            this.cameras.main.fade(1000, 0, 0, 0);
+
+            this.cameras.main.fade(1000, 255, 255, 255); );
             this.time.delayedCall(1000, () => {
                 this.scene.start("BadgeMessageScene");
             });
