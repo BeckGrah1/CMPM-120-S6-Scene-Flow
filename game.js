@@ -79,7 +79,7 @@ class gameplayScene extends Phaser.Scene {
         if (this.obstacle.x < 0) {
             this.moveRect = false;
 
-            this.cameras.main.fade(1000, 255, 255, 255); );
+            this.cameras.main.fade(1000, 255, 255, 255);
             this.time.delayedCall(1000, () => {
                 this.scene.start("BadgeMessageScene");
             });
